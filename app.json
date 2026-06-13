@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "TasteGo",
+    "slug": "MiAPP",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images_estilo/logo.png",
+    "scheme": "miapp",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images_estilo/logo.png",
+        "backgroundColor": "#E6F4FE"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "CAMERA"
+      ],
+      "package": "com.miapp.tastego"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images_estilo/logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images_estilo/logo.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      "expo-sqlite",
+      "expo-font",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "fe7387e1-c624-461c-abee-e5738e281018"
+      }
+    }
+  }
+}
